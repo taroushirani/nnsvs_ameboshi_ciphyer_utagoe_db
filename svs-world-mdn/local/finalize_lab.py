@@ -210,6 +210,8 @@ for d in [wav_dst_dir, lab_align_dst_dir, lab_score_dst_dir]:
 print("Prepare data for acoustic models")
 for base in tqdm(base_files):
     utt_id = splitext(basename(base))[0]
+
+    # For old database's workaround
     if utt_id=="amefuri":
         wav_path = join(expanduser(config["db_root"]), f"amefuri/{utt_id}.wav")
         if not exists(wav_path):
