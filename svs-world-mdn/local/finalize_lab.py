@@ -211,7 +211,9 @@ print("Prepare data for acoustic models")
 for base in tqdm(base_files):
     utt_id = splitext(basename(base))[0]
     if utt_id=="amefuri":
-    	wav_path = join(expanduser(config["db_root"]), f"amehuri/{utt_id}.wav")
+        wav_path = join(expanduser(config["db_root"]), f"amefuri/{utt_id}.wav")
+        if not exists(wav_path):
+    	    wav_path = join(expanduser(config["db_root"]), f"amehuri/{utt_id}.wav")
     else:
         wav_path = join(expanduser(config["db_root"]), f"{utt_id}/{utt_id}.wav")
     print(wav_path)
