@@ -88,8 +88,9 @@ acoustic_train: myconfig
 acoustic_data: myconfig
 
 # Pretrained model dir (leave empty to disable)
-pretrained_expdir: ../../oniku_kurumi_utagoe_db/svs-world-resf0convlstm/exp/oniku_kurumi
-
+#pretrained_expdir: ../../oniku_kurumi_utagoe_db/svs-world-resf0convlstm/exp/oniku_kurumi
+pretrained_expdir:
+  
 ###########################################################
 #                SYNTHESIS SETTING                        #
 ###########################################################

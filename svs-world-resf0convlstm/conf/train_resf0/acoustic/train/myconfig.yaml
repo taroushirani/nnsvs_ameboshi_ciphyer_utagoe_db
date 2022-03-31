@@ -1,7 +1,7 @@
 out_dir: exp
 log_dir: tensorboard/exp
 
-nepochs: 50
+nepochs: 200
 checkpoint_epoch_interval: 20
 
 # Weight for pitch regularization loss
@@ -17,7 +17,7 @@ use_detect_anomaly: true
 
 optim:
   optimizer:
-    name: Adam
+    name: RAdam
     params:
       lr: 0.001
       betas: [0.9, 0.999]

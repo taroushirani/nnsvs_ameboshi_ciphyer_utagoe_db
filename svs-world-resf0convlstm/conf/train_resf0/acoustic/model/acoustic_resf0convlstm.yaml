@@ -7,14 +7,14 @@ stream_weights:
 
 netG:
   _target_: nnsvs.model.ResSkipF0FFConvLSTM
-  in_dim: 348
+  in_dim: 335
   ff_hidden_dim: 2048
   conv_hidden_dim: 1024
   lstm_hidden_dim: 256
   out_dim: 206
   dropout: 0.0
   bidirectional: True
-  in_lf0_idx: 300
+  in_lf0_idx: 286
   out_lf0_idx: 180
   in_lf0_min: 
   in_lf0_max: 
